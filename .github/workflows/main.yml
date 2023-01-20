@@ -48,7 +48,7 @@ jobs:
     needs: cache-and-install
     steps:
       - name: Setup Node.js
-        uses: actions/seyup-node@v3
+        uses: actions/setup-node@v3
         with:
           node-version: "lts/*"
       - name: Release
