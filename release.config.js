@@ -1,7 +1,7 @@
 /* eslint-disable no-template-curly-in-string */
 
 const branches = [
-    'master',
+    'main',
     {
         name: 'develop',
         prerelease: true
