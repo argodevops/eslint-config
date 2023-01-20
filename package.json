@@ -1,5 +1,5 @@
 {
-    "name": "@argo/eslint-config",
+    "name": "@argodevops/eslint-config",
     "version": "1.2.0",
     "description": "",
     "main": "index.js",
