@@ -5,7 +5,7 @@ overrides:
   debug@<3.1.0: '>=3.1.0'
 
 specifiers:
-  '@argodevops/semantic-release-teams': ^1.0.11
+  '@argodevops/semantic-release-teams': ^1.0.12
   '@babel/core': ^7.20.12
   '@babel/eslint-parser': ^7.19.1
   '@semantic-release/changelog': ^6.0.2
@@ -43,7 +43,7 @@ dependencies:
   eslint-plugin-react-hooks: 4.6.0_eslint@8.32.0
 
 devDependencies:
-  '@argodevops/semantic-release-teams': 1.0.11_semantic-release@19.0.5
+  '@argodevops/semantic-release-teams': 1.0.12_semantic-release@19.0.5
   '@semantic-release/changelog': 6.0.2_semantic-release@19.0.5
   '@semantic-release/commit-analyzer': 9.0.2_semantic-release@19.0.5
   '@semantic-release/git': 10.0.1_semantic-release@19.0.5
@@ -62,8 +62,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.17
     dev: false
 
-  /@argodevops/semantic-release-teams/1.0.11_semantic-release@19.0.5:
-    resolution: {integrity: sha512-RhniU+zQ7NLxv1zxJgorrFQIOvpEX8GpLfKsZmNM0XKnbbboppsqn33TsH04KarT79AT/MDGomZgW0iYb2G5Qw==}
+  /@argodevops/semantic-release-teams/1.0.12_semantic-release@19.0.5:
+    resolution: {integrity: sha512-TDLKFFL7t7oeZHOtr58Z4yz23Td4rghXmt3U4PzcopILsnYBT9kXVBFSMbOzbo7pp3k6oeLkFCmODnJcoQ2CaQ==}
     dependencies:
       '@semantic-release/error': 3.0.0
       '@semantic-release/git': 10.0.1_semantic-release@19.0.5
