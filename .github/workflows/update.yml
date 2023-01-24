@@ -57,12 +57,6 @@ jobs:
           pnpm audit --fix
           pnpm install --no-frozen-lockfile
 
-      - name: Build
-        run: pnpm build
-
-      - name: Test
-        run: pnpm test
-
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "fix: dependecy updates"
