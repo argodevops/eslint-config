@@ -945,7 +945,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001519
-      electron-to-chromium: 1.4.487
+      electron-to-chromium: 1.4.488
       node-releases: 2.0.13
       update-browserslist-db: 1.0.11(browserslist@4.21.10)
     dev: false
@@ -1281,8 +1281,8 @@ packages:
       readable-stream: 2.3.8
     dev: true
 
-  /electron-to-chromium@1.4.487:
-    resolution: {integrity: sha512-XbCRs/34l31np/p33m+5tdBrdXu9jJkZxSbNxj5I0H1KtV2ZMSB+i/HYqDiRzHaFx2T5EdytjoBRe8QRJE2vQg==}
+  /electron-to-chromium@1.4.488:
+    resolution: {integrity: sha512-Dv4sTjiW7t/UWGL+H8ZkgIjtUAVZDgb/PwGWvMsCT7jipzUV/u5skbLXPFKb6iV0tiddVi/bcS2/kUrczeWgIQ==}
     dev: false
 
   /emoji-regex@8.0.0:
@@ -1450,8 +1450,8 @@ packages:
       resolve: 1.22.4
     dev: false
 
-  /eslint-import-resolver-node@0.3.8:
-    resolution: {integrity: sha512-tEe+Pok22qIGaK3KoMP+N96GVDS66B/zreoVVmiavLvRUEmGRtvb4B8wO9jwnb8d2lvHtrkhZ7UD73dWBVnf/Q==}
+  /eslint-import-resolver-node@0.3.9:
+    resolution: {integrity: sha512-WFj2isz22JahUv+B788TlO3N6zL3nNJGU8CcZbPZvVEkBPaJdCV4vy5wyghty5ROFbCRnm132v8BScu5/1BQ8g==}
     dependencies:
       debug: 3.2.7
       is-core-module: 2.13.0
@@ -1460,7 +1460,7 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-module-utils@2.8.0(eslint-import-resolver-node@0.3.8)(eslint@8.46.0):
+  /eslint-module-utils@2.8.0(eslint-import-resolver-node@0.3.9)(eslint@8.46.0):
     resolution: {integrity: sha512-aWajIYfsqCKRDgUfjEXNN/JlrzauMuSEy5sbd7WXbtW3EH6A6MpwEh42c7qD+MqQo9QMJ6fWLAeIJynx0g6OAw==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -1483,7 +1483,7 @@ packages:
     dependencies:
       debug: 3.2.7
       eslint: 8.46.0
-      eslint-import-resolver-node: 0.3.8
+      eslint-import-resolver-node: 0.3.9
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -1505,8 +1505,8 @@ packages:
       debug: 3.2.7
       doctrine: 2.1.0
       eslint: 8.46.0
-      eslint-import-resolver-node: 0.3.8
-      eslint-module-utils: 2.8.0(eslint-import-resolver-node@0.3.8)(eslint@8.46.0)
+      eslint-import-resolver-node: 0.3.9
+      eslint-module-utils: 2.8.0(eslint-import-resolver-node@0.3.9)(eslint@8.46.0)
       has: 1.0.3
       is-core-module: 2.13.0
       is-glob: 4.0.3
