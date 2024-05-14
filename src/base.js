@@ -1,17 +1,30 @@
-module.exports = {
-    env: {
-        es6: true,
-        jest: true
+import babelParser from '@babel/eslint-parser';
+import prettierConfig from 'eslint-config-prettier';
+import importPlugin from 'eslint-plugin-import';
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import globals from 'globals';
+
+import merge from 'lodash.merge';
+
+import babelOptions from './babelOptions';
+
+export default merge({}, prettierConfig, eslintPluginPrettierRecommended, {
+    languageOptions: {
+        globals: {
+            Atomics: 'readonly',
+            SharedArrayBuffer: 'readonly',
+            ...globals.es2021,
+            ...globals.jest
+        },
+        parser: babelParser,
+        parserOptions: {
+            requireConfigFile: false,
+            babelOptions
+        },
+        ecmaVersion: 2021
     },
-    extends: ['plugin:prettier/recommended', 'prettier'],
-    globals: {
-        Atomics: 'readonly',
-        SharedArrayBuffer: 'readonly'
-    },
-    parser: '@babel/eslint-parser',
-    parserOptions: {
-        ecmaVersion: 2020,
-        sourceType: 'module'
+    plugins: {
+        import: importPlugin
     },
     rules: {
         'padding-line-between-statements': 'error',
@@ -95,4 +108,4 @@ module.exports = {
             'list'
         ]
     }
-};
+});
