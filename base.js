@@ -14,6 +14,18 @@ module.exports = {
         sourceType: 'module'
     },
     rules: {
+        'no-restricted-syntax': [
+            'error',
+            {
+                message:
+                    'Optional chaining is not allowed, due to issues collecting code coverage',
+                selector: 'ChainExpression'
+            },
+            {
+                message: 'If statements must contain a block statement',
+                selector: 'IfStatement > :not(BlockStatement).consequent'
+            }
+        ],
         'padding-line-between-statements': 'error',
         'import/order': [
             'error',
