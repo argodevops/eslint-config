@@ -24,16 +24,6 @@
         "eslint-plugin-react": "^7.33.2",
         "eslint-plugin-react-hooks": "^4.6.0"
     },
-    "devDependencies": {
-        "@argodevops/semantic-release-teams": "1.0.22",
-        "@semantic-release/changelog": "^6.0.3",
-        "@semantic-release/commit-analyzer": "^12.0.0",
-        "@semantic-release/git": "^10.0.1",
-        "@semantic-release/npm": "^10.0.4",
-        "@semantic-release/release-notes-generator": "^13.0.0",
-        "semantic-release": "^21.0.7",
-        "semantic-release-npm-deprecate": "^1.0.34"
-    },
     "pnpm": {
         "overrides": {
             "json5@<2.2.2": ">=2.2.2",
