@@ -46,4 +46,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+        run: |
+          pnpm \
+          --package=@semantic-release/commit-analyzer \
+          --package=@semantic-release/release-notes-generator \
+          --package=@semantic-release/changelog \
+          --package=@semantic-release/npm \
+          --package=@argodevops/semantic-release-teams \
+          --package=semantic-release \
+          dlx semantic-release
