@@ -1,14 +1,14 @@
 module.exports = {
     extends: [
-      "eslint:recommended",
-      "plugin:react/recommended",
-      "plugin:react-hooks/recommended",
-      "plugin:jsx-a11y/recommended",
-      "plugin:import/errors",
-      "plugin:import/warnings",
-      "prettier" // Disables ESLint rules that conflict with Prettier
+        'eslint:recommended',
+        'plugin:react/recommended',
+        'plugin:react-hooks/recommended',
+        'plugin:jsx-a11y/recommended',
+        'plugin:import/errors',
+        'plugin:import/warnings',
+        'prettier' // Disables ESLint rules that conflict with Prettier
     ],
-    plugins: ["react", "react-hooks", "jsx-a11y", "import", "prettier"],
+    plugins: ['react', 'react-hooks', 'jsx-a11y', 'import', 'prettier'],
     rules: {
         'prettier/prettier': 'error',
         'sort-imports': [
@@ -18,10 +18,10 @@ module.exports = {
                 ignoreDeclarationSort: true
             }
         ],
-        "react/react-in-jsx-scope": "off", // Not needed for Next.js
-        "import/no-unresolved": "off",
-        "import/order": ["error", { "alphabetize": { "order": "asc" } }],
-        "jsx-a11y/anchor-is-valid": "off",
+        'react/react-in-jsx-scope': 'off', // Not needed for Next.js
+        'import/no-unresolved': 'off',
+        'import/order': ['error', { alphabetize: { order: 'asc' } }],
+        'jsx-a11y/anchor-is-valid': 'off',
         'react/jsx-props-no-spreading': 'off',
         'indent': ['warn', 4],
         'semi': ['error', 'always'],
@@ -42,8 +42,7 @@ module.exports = {
         'no-restricted-syntax': [
             'error',
             {
-                message:
-                    'Optional chaining is not allowed, due to issues collecting code coverage',
+                message: 'Optional chaining is not allowed, due to issues collecting code coverage',
                 selector: 'ChainExpression'
             },
             {
@@ -53,31 +52,30 @@ module.exports = {
         ],
         'padding-line-between-statements': 'error',
         'react/jsx-indent': ['error', 4],
-      'react/jsx-indent-props': ['error', 4],
-      'react/jsx-curly-newline': 'off',
-      'react/display-name': 'off',
-      'react/require-default-props': 'off',
-      'jsx-closing-bracket-location': 'off',
-      'jsx-quotes': ['error', 'prefer-single'],
-      'react/jsx-closing-bracket-location': 'off',
-      'react/function-component-definition': 'off'
+        'react/jsx-indent-props': ['error', 4],
+        'react/jsx-curly-newline': 'off',
+        'react/display-name': 'off',
+        'react/require-default-props': 'off',
+        'jsx-closing-bracket-location': 'off',
+        'jsx-quotes': ['error', 'prefer-single'],
+        'react/jsx-closing-bracket-location': 'off',
+        'react/function-component-definition': 'off'
     },
     env: {
-      browser: true,
-      node: true,
-      es2021: true
+        browser: true,
+        node: true,
+        es2021: true
     },
     parserOptions: {
-      ecmaVersion: 2020,
-      sourceType: "module",
-      ecmaFeatures: {
-        jsx: true
-      }
+        ecmaVersion: 2020,
+        sourceType: 'module',
+        ecmaFeatures: {
+            jsx: true
+        }
     },
     settings: {
-      react: {
-        version: "detect"
-      }
+        react: {
+            version: 'detect'
+        }
     }
 };
-  
