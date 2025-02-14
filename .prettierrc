@@ -7,7 +7,7 @@
     "printWidth": 80,
     "quoteProps": "consistent",
     "bracketSpacing": true,
-    "jsxBracketSameLine": true,
+    "bracketSameLine": true,
     "arrowParens": "avoid",
     "parser": "babel",
     "htmlWhitespaceSensitivity": "css",

@@ -1,9 +1,9 @@
 module.exports = {
     env: {
-        es6: true,
+        es2020: true,
         jest: true
     },
-    extends: ['plugin:prettier/recommended', 'prettier'],
+    extends: ['plugin:prettier/recommended'],
     globals: {
         Atomics: 'readonly',
         SharedArrayBuffer: 'readonly'
@@ -97,7 +97,7 @@ module.exports = {
         'arrow-body-style': ['error', 'as-needed'],
         'arrow-parens': ['error', 'as-needed'],
         'id-length': ['error', { min: 3, exceptions: ['id'] }],
-        'id-blacklist': [
+        'id-denylist': [
             'error',
             'err',
             'callback',
