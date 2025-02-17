@@ -1,34 +1,23 @@
 {
-    "name": "@argodevops/eslint-config",
-    "version": "2.0.0",
-    "description": "",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/argodevops/eslint-config.git"
-    },
-    "author": "chris@argodevops.co.uk",
-    "license": "ISC",
-    "dependencies": {
-        "@babel/core": "^7.26.9",
-        "@babel/eslint-parser": "^7.26.8",
-        "eslint": "^9.20.1",
-        "eslint-config-airbnb": "^19.0.4",
-        "eslint-config-airbnb-base": "^15.0.0",
-        "eslint-config-prettier": "^10.0.1",
-        "eslint-import-resolver-babel-module": "^5.3.2",
-        "eslint-plugin-import": "^2.31.0",
-        "eslint-plugin-jasmine": "^4.2.2",
-        "eslint-plugin-jsx-a11y": "^6.10.2",
-        "eslint-plugin-prettier": "^5.2.3",
-        "eslint-plugin-react": "^7.37.4",
-        "eslint-plugin-react-hooks": "5.1.0"
-    },
-    "pnpm": {
-        "overrides": {
-            "json5@<2.2.2": ">=2.2.3",
-            "debug@<3.1.0": ">=4.4.0",
-            "semver@<7.5.2": ">=7.7.1"
-        }
-    }
+  "name": "@argodevops/eslint-config",
+  "version": "2.0.0",
+  "description": "Reusable ESLint and Prettier rules for React projects",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/argodevops/eslint-config.git"
+  },
+  "author": "chris@argodevops.co.uk",
+  "license": "ISC",
+  "keywords": ["eslint", "prettier", "react", "typescript"],
+  "peerDependencies": {
+    "eslint": "^9.20.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "prettier": "^3.5.1"
+  }
 }
